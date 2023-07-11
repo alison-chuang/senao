@@ -1,0 +1,5 @@
+.env
+.gitignore
+__pycache__
+.idea
+docker-entrypoint-initdb.d
