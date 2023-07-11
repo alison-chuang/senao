@@ -1,7 +1,6 @@
 bcrypt==4.0.1
 blinker==1.6.2
 click==8.1.4
-cryptography==41.0.1
 Deprecated==1.2.14
 Flask==2.3.2
 Flask-Bcrypt==1.0.1
@@ -20,6 +19,7 @@ peewee==3.16.2
 Pygments==2.15.1
 PyMySQL==1.1.0
 python-dotenv==1.0.0
+redis==4.6.0
 rich==13.4.2
 typing_extensions==4.7.1
 Werkzeug==2.3.6
