@@ -2,22 +2,8 @@ import os
 
 from flask_bcrypt import generate_password_hash,check_password_hash
 from peewee import *
-from dotenv import load_dotenv
-load_dotenv()
 
-database_host = os.environ.get('DB_HOST')
-database_port = os.environ.get('DB_PORT')
-database_name = os.environ.get('DB_NAME')
-database_user = os.environ.get('DB_USER')
-database_password = os.environ.get('DB_PASSWORD')
-
-DATABASE = MySQLDatabase(
-    database_name,
-    host=database_host,
-    port=int(database_port),
-    user=database_user,
-    password=database_password
-)
+from .connection import DATABASE
 
 class Account(Model):
     username = CharField(unique=True)
